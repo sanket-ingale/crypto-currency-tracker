@@ -1,6 +1,6 @@
 .row{
     display: grid;
-    grid-template-columns: 14% 10% 10% 16% 16% 16%;
+    grid-template-columns: 14% 10% 12% 16% 16% 16%;
     /* flex-direction: row; */
     width: 80%;
     justify-content: space-around;
@@ -21,7 +21,7 @@
 }
 
 .row img{
-    height: 2vw;
+    height: 4vh;
 }
 
 .info{
@@ -30,7 +30,7 @@
 
 .num{
     justify-self: flex-end;
-    /* padding-right: 2vw; */
+    padding-right: 2vw;
     /* border: 1px solid red; */
 }
 
@@ -40,4 +40,13 @@
 
 .green{
     color: greenyellow;
+}
+
+@media screen and (max-width: 600px) {
+    .row{
+        width: 100%;
+    }
+    .row img{
+        height: 2vh;
+    }
 }

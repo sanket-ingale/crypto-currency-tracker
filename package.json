@@ -1,5 +1,6 @@
 {
   "name": "bitcoin-tracker",
+  "homepage": "https://sanket-ingale.github.io/crypto-currency-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

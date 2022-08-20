@@ -12,16 +12,14 @@
 
 .search{
     display: flex;
-    gap: 0.5vw;
+    gap: 1vw;
     justify-content: space-between;
     align-items: center;
     margin: 5vh;
     width: 50%;
-    /* border: 1px solid red; */
 }
 
 .search input{
-    font-size: medium;
     background-color: #444;
     border: none;
     width: 100%;
@@ -41,7 +39,6 @@
 }
 
 .currency--btn{
-    font-size: medium;
     background-color: #444;
     border: none;
     padding: 1.5vh;
@@ -60,14 +57,14 @@
     position: sticky;
     top: 1vh;
     display: grid;
-    grid-template-columns: 14% 10% 16% 16% 16% 14%;
+    grid-template-columns: 14% 12% 16% 16% 16% 14%;
     width: 82%;
     justify-content: space-evenly;
     align-items: center;
     padding: 0.5vw;
     background-color: #555;
     font-weight: 900;
-    box-shadow: #000 0vh 1vh 1vh;
+    box-shadow: #000 0vh 0.5vh 1vh;
 }
 
 .main--row div{
@@ -89,9 +86,21 @@
 }
 
 .asc{
-    background: url('./icons/up-arrow-white.png') center center/1vw 1vw no-repeat;
+    background: url('./icons/up-arrow-white.png') center center/0.8vw 0.8vw no-repeat;
 }
 
 .dsc{
-    background: url('./icons/down-arrow-white.png') center center/1vw 1vw no-repeat;
+    background: url('./icons/down-arrow-white.png') center center/0.8vw 0.8vw no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .search, .main--row{
+        width: 100%;
+    }
+    .currency--btn, .search input{
+        padding: 1vh;
+    }
+    .active{
+        border: 1px solid #fff;
+    }
 }
