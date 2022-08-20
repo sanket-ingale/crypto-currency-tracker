@@ -1,0 +1,22 @@
+#to--top {
+    position: fixed;
+    bottom: 10vh;
+    right: 2vw;
+    z-index: 1;
+    font-size: 0.8em;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    color: #111;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#to--top:hover{
+  background-color: #aaa;
+}
+
+#to--top:active{
+  background-color: #333;
+  color: #ddd;
+}
